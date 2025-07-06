@@ -1,10 +1,12 @@
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
+import ThemeToggle from '@/shared/components/Header/ThemeToggle';
 
 const AccountActions = () => {
   return (
     <div className="flex items-center gap-4">
+      <ThemeToggle />
       {/* دکمه ورود */}
       <Link
         href="/login"
